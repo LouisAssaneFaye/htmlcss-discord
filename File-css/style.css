@@ -2,9 +2,78 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
 }
 
-footer,header{
+
+
+header.flex{
+    height: 460px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-image:url('../img/jumbo.png');
+    background-size: cover;
+}
+
+header>*{
+    color: white;
+}
+
+header h1{
+    margin-bottom: 30px;
+}
+
+#sfondo-senape span{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+header span:nth-of-type(1){
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+}
+
+header span:nth-of-type(2){
+    background-color: black;
+    border-radius: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 225px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+header p{
+    margin-bottom: 26px;
+}
+
+.sfondo-blue_chiaro img{
+    height: 320px;
+    width: 500px;
+}
+
+.sfondo-rosa_chiaro h2{
+    margin-bottom: 15px;
+}
+
+footer{
     height: 60px;
 }
 
@@ -25,9 +94,7 @@ main section:nth-of-type(5){
 
 }
 
-#sfondo-blue{
-    background-color: rgb(26, 26, 165);
-}
+
 
 .sfondo-bianco{
     background-color: rgb(255, 252, 252);
@@ -49,15 +116,14 @@ main section:nth-of-type(5){
 
 
 #sfondo-senape{
-    background-color: rgb(205, 151, 53);
     width: 70%;
+    font-size: 14px;
 }
 
 #sfondo-rosa_accesso{
-    background-color: rgb(218, 110, 218);
     height: 320px;
-    width: 70%;
-    border: 1.5px black dashed;
+    width: 830px;
+    text-align: center;
 }
 
 .altezza-piccola{
@@ -102,16 +168,17 @@ footer{
 
 .sfondo-blue_chiaro{
     width: 70%;
-    background-color: rgb(3, 120, 245);
     height: 320px;
     float: left;
+    border: 1.5px black dashed;
+    padding-left: 40px;
 }
 
 .sfondo-rosa_chiaro{
     width: 30%;
-    background-color: rgb(233, 159, 172);
     height: 320px;
     float: left;
+    border: 1.5px black dashed;
 }
 
 #sfondo-rosa_scuro{
@@ -144,13 +211,11 @@ footer{
     width: 6%;
     height: 24px;
     background-color: rgb(220, 113, 115);
-    border: dashed black 2px;
     text-align: center;
     line-height: 20px;
 }
 
 #sfondo-senape div:nth-of-type(1){
-    border: dashed 1px black;
     width: 15%;
     height: 40px;
     float:left;
@@ -160,23 +225,21 @@ footer{
 }
 
 #sfondo-senape div:nth-of-type(3){
-    border: dashed 1px black;
     width: 15%;
     height: 40px;
     float: left;
     line-height: 40px;
-    padding-left: 100px;
+    padding-left: 88px;
 }
 
 #sfondo-senape div:nth-of-type(2){
-    border: dashed 1px black;
     width: 70%;
     height: 40px;
     float: left;
 }
 
 ul.flex{
-    width: 30%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     align-content: center;
